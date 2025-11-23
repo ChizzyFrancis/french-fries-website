@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Fries - Global Variants</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">French Fries</div>
+        
+        <!-- The Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        
+        <!-- Menu Links -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="etymology.html">Etymology</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="variants.html">Variants</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Global French Fry Variants</h1>
+
+    <p>French fries have been reinvented all over the world:</p>
+
+    <div class="gallery">
+        <img src="images/fries9.jpg" alt="Canadian Poutine">
+        <img src="images/fries6.jpg" alt="Korean Tornado Fries">
+        <img src="images/fries7.jpg" alt="German Currywurst & Fries">
+        <img src="images/fries8.jpg" alt="British Fish & Chips">
+        <img src="images/fries5.jpg" alt="Belgian Frites with mayo">
+        <img src="images/fries4.jpg" alt="Dutch Patatje Oorlog">
+    </div>
+
+    <p>Popular toppings include cheese curds & gravy (Canada), peanut sauce & onions (Netherlands), curry ketchup (Germany), and chili con carne (USA).</p>
+</main>
+
+<a href="#" class="back-to-top">↑</a>
+
+<script>
+    window.onscroll = function() {
+        const btn = document.querySelector('.back-to-top');
+        btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    document.querySelector('.back-to-top').onclick = function(e) {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
+
+</body>
+</html>
+
+<a href="#" class="back-to-top">↑</a>
+
+<footer>
+  <marquee>  <p>© 2025 Chukwudalu John Anasiudu - 2694855 | Website Development Coursework - IC10051</p></marquee>
+</footer>
+
+
+</body>
+</html>

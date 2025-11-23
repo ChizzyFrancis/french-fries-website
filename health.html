@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Fries - Health & Nutrition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">French Fries</div>
+        
+        <!-- The Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        
+        <!-- Menu Links -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="etymology.html">Etymology</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="variants.html">Variants</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Health & Nutrition Facts</h1>
+
+    <img src="images/fries5.jpg" alt="Healthier oven-baked fries">
+
+    <p>A large serving of fast-food fries contains approximately:</p>
+
+    <table>
+        <tr><th>Nutrient</th><th>Amount</th></tr>
+        <tr><td>Calories</td><td>510 kcal</td></tr>
+        <tr><td>Total Fat</td><td>24g</td></tr>
+        <tr><td>Saturated Fat</td><td>3.5g</td></tr>
+        <tr><td>Carbohydrates</td><td>66g</td></tr>
+        <tr><td>Sodium</td><td>420mg</td></tr>
+    </table>
+
+    <p>High-temperature frying creates acrylamide — a potential carcinogen. Healthier options include air-frying or oven-baking.</p>
+</main>
+
+<a href="#" class="back-to-top">↑</a>
+
+<footer>
+  <marquee>  <p>© 2025 Chukwudalu John Anasiudu - 2694855 | Website Development Coursework - IC10051</p></marquee>
+</footer>
+
+<script>
+    window.onscroll = function() {
+        const btn = document.querySelector('.back-to-top');
+        btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    document.querySelector('.back-to-top').onclick = function(e) {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
+<script>
+    function toggleMenu() {
+        document.getElementById("nav-links").classList.toggle("active");
+    }
+</script>
+</body>
+</html>

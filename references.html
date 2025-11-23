@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Fries - References</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">French Fries</div>
+        
+        <!-- The Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        
+        <!-- Menu Links -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="etymology.html">Etymology</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="variants.html">Variants</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>References</h1>
+    <ol style="font-size:1.2rem; line-height:2;">
+        <li>Wikipedia contributors. “French fries.” Wikipedia, The Free Encyclopedia.</li>
+        <li>Jo Gérard, Belgian historian (1980)</li>
+        <li>Thomas Jefferson White House records, 1802</li>
+        <li>McDonald’s Corporation food specifications</li>
+        <li>USDA Nutrition Database</li>
+        <li>World Health Organization – Acrylamide in food</li>
+        <li>European Food Safety Authority reports</li>
+    </ol>
+</main>
+
+<a href="#" class="back-to-top">↑</a>
+
+<footer>
+  <marquee>  <p>© 2025 Chukwudalu John Anasiudu - 2694855 | Website Development Coursework - IC10051</p></marquee>
+</footer>
+
+<script>
+    window.onscroll = function() {
+        const btn = document.querySelector('.back-to-top');
+        btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    document.querySelector('.back-to-top').onclick = function(e) {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
+<script>
+    function toggleMenu() {
+        document.getElementById("nav-links").classList.toggle("active");
+    }
+</script>
+</body>
+</html>

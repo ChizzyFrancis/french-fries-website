@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Fries - Preparation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">French Fries</div>
+        
+        <!-- The Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        
+        <!-- Menu Links -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="etymology.html">Etymology</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="variants.html">Variants</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>How French Fries Are Prepared</h1>
+
+    <img src="images/fries12.jpg" alt="Double frying process">
+
+    <p>Perfect fries require the famous <strong>double-fry method</strong>:</p>
+    <ol style="font-size:1.2rem; margin:30px 0; padding-left:40px;">
+        <li>Cut potatoes into uniform strips (7–10 mm)</li>
+        <li>Blanch at 130–150°C for 5–8 minutes (cooks inside, no colour)</li>
+        <li>Cool completely (or freeze for commercial fries)</li>
+        <li>Second fry at 175–190°C for 2–4 minutes (golden & crispy)</li>
+    </ol>
+
+    <p>Russet or Maris Piper potatoes are best due to high starch content. The Maillard reaction during the second fry creates the golden colour and flavour.</p>
+
+    <img src="images/fries11.jpg" alt="Perfect golden fries">
+</main>
+
+<a href="#" class="back-to-top">↑</a>
+
+<footer>
+  <marquee>  <p>© 2025 Chukwudalu John Anasiudu - 2694855 | Website Development Coursework - IC10051</p></marquee>
+</footer>
+
+<script>
+    window.onscroll = function() {
+        const btn = document.querySelector('.back-to-top');
+        btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    document.querySelector('.back-to-top').onclick = function(e) {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
+<script>
+    function toggleMenu() {
+        document.getElementById("nav-links").classList.toggle("active");
+    }
+</script>
+</body>
+</html>

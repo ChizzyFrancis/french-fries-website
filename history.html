@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Fries - History</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">French Fries</div>
+        
+        <!-- The Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        
+        <!-- Menu Links -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="etymology.html">Etymology</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="variants.html">Variants</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>History of French Fries</h1>
+
+    <img src="images/fries5.jpg" alt="Traditional Belgian frites stand">
+
+    <p>The exact origin of French fries is hotly disputed between Belgium and France, with both countries claiming to have invented them in the late 17th century.</p>
+
+    <h2>Belgian Claim (Most Widely Accepted)</h2>
+    <p>According to Belgian historian Jo Gérard, poor villagers in the Meuse Valley (1680) used to fry small fish from the river. When the river froze in winter, they cut potatoes lengthwise to resemble fish and fried them instead — this is considered the first recorded appearance of fries.</p>
+
+    <h2>French Connection & Name Origin</h2>
+    <p>During World War I, American soldiers stationed in Belgium tasted the dish. Since the Belgian Army spoke French, the soldiers called them “French fries”. The name stuck in the United States and spread worldwide.</p>
+
+    <h2>Early American Adoption</h2>
+    <p>Thomas Jefferson served “potatoes served in the French manner” at a White House dinner in 1802 — one of the earliest written records in America. By the 1930s, fries became a standard side dish, and McDonald’s made them globally famous in the 1960s with their uniform cutting and frying process.</p>
+
+    <img src="images/fries6.jpg" alt="Vintage Belgian fries vendor">
+</main>
+
+<a href="#" class="back-to-top">↑</a>
+
+<footer>
+  <marquee>  <p>© 2025 Chukwudalu John Anasiudu - 2694855 | Website Development Coursework - IC10051</p></marquee>
+</footer>
+
+<script>
+    window.onscroll = function() {
+        const btn = document.querySelector('.back-to-top');
+        btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    document.querySelector('.back-to-top').onclick = function(e) {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
+<script>
+    function toggleMenu() {
+        document.getElementById("nav-links").classList.toggle("active");
+    }
+</script>
+</body>
+</html>

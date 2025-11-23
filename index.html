@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Fries - The Ultimate Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">French Fries</div>
+        
+        <!-- The Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        
+        <!-- Menu Links -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="etymology.html">Etymology</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="variants.html">Variants</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>French Fries</h1>
+    
+    <img src="images/fries8.jpg" alt="Golden crispy French fries">
+
+    <p style="font-size:1.4rem; text-align:center; max-width:900px; margin:40px auto;">
+        French fries (North American English), chips (British English), finger chips (Indian English), or French-fried potatoes are <strong>batonnet</strong> or <strong>allumette</strong>-cut deep-fried potatoes of disputed origin from Belgium or France. They are one of the most beloved and widely consumed fast-food items in the world.
+    </p>
+
+    <p>French fries are served hot, either soft or crispy, and are generally eaten as part of lunch or dinner or by themselves as a snack. They are frequently paired with ketchup, mayonnaise, vinegar, or dozens of other condiments depending on the country.</p>
+
+    <h2>Quick Facts</h2>
+    <table>
+        <tr><th>Alternative names</th><td>Chips, finger chips, fries, frites, hot chips, steak fries</td></tr>
+        <tr><th>Course</th><td>Side dish or snack</td></tr>
+        <tr><th>Place of origin</th><td>Belgium or France (disputed)</td></tr>
+        <tr><th>Main ingredients</th><td>Potatoes, vegetable oil, salt</td></tr>
+        <tr><th>Variations</th><td>Curly fries, waffle fries, poutine, chili cheese fries, tornado fries</td></tr>
+        <tr><th>Calories (large serving)</th><td>Approximately 510 kcal</td></tr>
+    </table>
+</main>
+
+<a href="#" class="back-to-top">↑</a>
+
+<footer>
+  <marquee>  <p>© 2025 Chukwudalu John Anasiudu - 2694855 | Website Development Coursework - IC10051</p></marquee>
+</footer>
+
+<script>
+    window.onscroll = function() {
+        const btn = document.querySelector('.back-to-top');
+        btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    document.querySelector('.back-to-top').onclick = function(e) {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
+<script>
+    function toggleMenu() {
+        document.getElementById("nav-links").classList.toggle("active");
+    }
+</script>
+</body>
+</html>

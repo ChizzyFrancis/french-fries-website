@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Fries - Etymology</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">French Fries</div>
+        
+        <!-- The Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+        
+        <!-- Menu Links -->
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="etymology.html">Etymology</a></li>
+            <li><a href="preparation.html">Preparation</a></li>
+            <li><a href="variants.html">Variants</a></li>
+            <li><a href="health.html">Health</a></li>
+            <li><a href="references.html">References</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1>Etymology & Names Around the World</h1>
+    
+    <img src="images/fries3.jpg" alt="Different names of fries worldwide">
+
+    <p>The term “French” refers to the cutting technique (“to french” = cut into strips), not the country of origin.</p>
+
+    <p>During World War I, American soldiers in Belgium heard French spoken and called them “French fries”. The name stuck globally.</p>
+
+    <h2>Names in Different Countries</h2>
+    <table>
+        <tr><th>Region</th><th>Name</th><th>Notes</th></tr>
+        <tr><td>United Kingdom / Ireland</td><td>Chips</td><td>Thicker than American fries</td></tr>
+        <tr><td>France</td><td>Pommes frites</td><td>Literally “fried apples” (old term for potatoes)</td></tr>
+        <tr><td>Belgium / Netherlands</td><td>Friet / Patat</td><td>Served in paper cones</td></tr>
+        <tr><td>Canada</td><td>Fries (or Poutine)</td><td>Especially Québec</td></tr>
+        <tr><td>India</td><td>Finger chips</td><td>Popular street food</td></tr>
+        <tr><td>Australia / New Zealand</td><td>Hot chips</td><td>Often with chicken salt</td></tr>
+        <tr><td>South Africa</td><td>Slap chips</td><td>Soft & vinegary</td></tr>
+    </table>
+</main>
+
+<a href="#" class="back-to-top">↑</a>
+
+<footer>
+  <marquee>  <p>© 2025 Chukwudalu John Anasiudu - 2694855 | Website Development Coursework - IC10051</p></marquee>
+</footer>
+
+<script>
+    window.onscroll = function() {
+        const btn = document.querySelector('.back-to-top');
+        btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    document.querySelector('.back-to-top').onclick = function(e) {
+        e.preventDefault();
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+</script>
+<script>
+    function toggleMenu() {
+        document.getElementById("nav-links").classList.toggle("active");
+    }
+</script>
+</body>
+</html>
