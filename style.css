@@ -213,4 +213,46 @@ footer {
         display: block;
         font-size: 1.3rem;
     }
+/* Mobile Menu */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#nav-links {
+    display: flex;
+    list-style: none;
+}
+
+#nav-links.active {
+    display: block !important;
+}
+
+/* Show hamburger on small screens */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+    }
+    
+    #nav-links li {
+        margin: 15px 0;
+    }
+    
+    #nav-links a {
+        color: white;
+        font-size: 18px;
+    }
+}
 }
