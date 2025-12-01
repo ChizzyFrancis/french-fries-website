@@ -50,6 +50,10 @@
 <a href="#" class="back-to-top">↑</a>
 
 <script>
+    function toggleMenu() {
+        const navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("active");
+    }
     window.onscroll = function() {
         const btn = document.querySelector('.back-to-top');
         btn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
@@ -71,4 +75,5 @@
 
 
 </body>
+
 </html>
